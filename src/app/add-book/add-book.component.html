@@ -1,0 +1,116 @@
+<div class="container">
+    <div class="row">
+        <div class="icon-left">
+        </div>
+        <form [formGroup]="bookForm">
+            <div class="header">
+                <h1>*Lütfen Eklemek İstediğiniz Kitabın Bilgilerini Giriniz*</h1>
+            </div>
+            <div class="add">
+                <div class="book-input">
+                    <div class="control">
+                        <p>ID:</p>
+                        <div class="error">
+                            <input type="number" formControlName="id">
+                            <span *ngIf="!bookForm.get('id').valid && bookForm.get('id').touched" class="error-block">
+                                *Lütfen bir değer giriniz.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <p>Kitap Adı:</p>
+                        <div class="error">
+                            <input type="text" formControlName="bookName">
+                            <span *ngIf="!bookForm.get('bookName').valid && bookForm.get('bookName').touched"
+                                class="error-block">
+                                *Lütfen bir değer giriniz.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <p>Yazar:</p>
+                        <div class="error">
+                            <input type="text" formControlName="writer">
+                            <span *ngIf="!bookForm.get('writer').valid && bookForm.get('writer').touched"
+                                class="error-block">
+                                *Lütfen bir değer giriniz.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <p>Kitap Türü:</p>
+                        <div class="error">
+                            <input type="text" formControlName="bookType">
+                            <span *ngIf="!bookForm.get('bookType').valid && bookForm.get('bookType').touched"
+                                class="error-block">
+                                *Lütfen bir değer giriniz.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <p>Yayın Yılı:</p>
+                        <div class="error">
+                            <input type="number" formControlName="bookYear">
+                            <span *ngIf="!bookForm.get('bookYear').valid && bookForm.get('bookYear').touched"
+                                class="error-block">
+                                *Lütfen bir değer giriniz.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <p>Yayınevi:</p>
+                        <div class="error">
+                            <input type="text" formControlName="bookStore">
+                            <span *ngIf="!bookForm.get('bookStore').valid && bookForm.get('bookStore').touched"
+                                class="error-block">
+                                *Lütfen bir değer giriniz.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <p>Sayfa Sayısı:</p>
+                        <div class="error">
+                            <input type="number" formControlName="page">
+                            <span *ngIf="!bookForm.get('page').valid && bookForm.get('page').touched"
+                                class="error-block">
+                                *Lütfen bir değer giriniz.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <p>Fiyatı:</p>
+                        <div class="error">
+                            <input type="number" formControlName="price">
+                            <span *ngIf="!bookForm.get('price').valid && bookForm.get('price').touched"
+                                class="error-block">
+                                *Lütfen bir değer giriniz.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <p>Kitap Fotoğrafı:</p>
+                        <div class="error">
+                            <input type="text" formControlName="image">
+                            <span *ngIf="!bookForm.get('image').valid && bookForm.get('image').touched"
+                                class="error-block">
+                                *Lütfen bir değer giriniz.
+                            </span>
+                            <span *ngIf="bookForm.get('image').hasError('pattern')" class="error-block">Lütfen geçerli bir değer giriniz.</span>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <p>Kitap Açıklaması:</p>
+                        <div class="error">
+                            <input type="text" class="desc" formControlName="desciription">
+                            <span *ngIf="!bookForm.get('desciription').valid && bookForm.get('desciription').touched"
+                                class="error-block">
+                                *Lütfen bir değer giriniz.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button (click)="openDialog()">EKLE</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,114 @@
+.container{
+    background: rgb(249, 252, 216);
+}
+
+form{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.add{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    margin-top: 20px;
+    background: rgb(255, 253, 254);
+    width: 700px;
+    padding: 20px;
+    border-radius: 7px;
+    box-shadow: 0 0px 6px 2px rgb(241, 219, 186);
+    height: 720px;
+}
+
+.book-input{
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+}
+
+input{
+    padding: 7px;
+    margin: 15px;
+    background: rgb(249, 252, 216);
+    border:none;
+    border-radius: 5px;
+    outline-color: chocolate;
+    width: 90%;
+}
+
+.book-info{   
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    font-size: 17px;
+    padding-top: 5px;
+
+    width: 30%;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 30px;
+    background: rgb(219, 116, 43);
+    color: white;
+    width: 800px;
+    border-radius: 7px;
+    box-shadow: 0 0px 6px chocolate;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    background: olivedrab;
+    height: 80px;
+    color: white;
+    font-size: 18px;
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-weight: bold;
+    box-shadow: 0 0px 6px 2px rgb(59, 65, 2);
+}
+
+
+.error-block{
+    color: rgb(83, 3, 3);
+    margin-left: 20px;
+}
+
+.control{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.error{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}

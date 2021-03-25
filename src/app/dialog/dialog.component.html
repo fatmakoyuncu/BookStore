@@ -1,0 +1,22 @@
+<h2 mat-dialog-title>Aşağıdaki Bilgileri Onaylıyor Musunuz?</h2>
+
+<mat-dialog-content>
+
+<p><b>ID: </b> &nbsp; {{data.id}}</p>
+<p><b>Kitap Adı: </b> &nbsp; {{data.bookName}}</p>
+<p><b>Yazar: </b> &nbsp; {{data.writer}}</p>
+<p><b>Kitap Türü: </b> &nbsp; {{data.bookType}}</p>
+<p><b>Yayın Yılı: </b> &nbsp; {{data.bookYear}}</p>
+<p><b>Yayınevi:</b>  &nbsp; {{data.bookStore}}</p>
+<p><b>Sayfa Sayısı: </b> &nbsp; {{data.page}}</p>
+<p><b>Fiyatı: </b> &nbsp; {{data.price}}&#x20BA;</p>
+<p style="height: 25%;"><b>Kitap Fotoğrafı: </b> &nbsp; <img width="25%" height="25%" src="{{data.image}}"></p>
+<p><b>Açıklaması:</b>  &nbsp; {{data.desciription}}</p>
+
+
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button class="mat-raised-button" (click) = "close()" >Hayır</button>
+    <button class="mat-raised-button" (click) = "add()" routerLink = "/">Evet</button>
+</mat-dialog-actions>
